@@ -1,0 +1,23 @@
+{
+  var weather;
+var api="http://api.openweathermap.org/data/2.5/weather?q=";
+var city="london";
+var apikey="&db494c4cbac8d7f556b053fdb41187f7";
+var units="&units=metric";
+
+
+function fun1()
+{
+	document.write(temp);
+	var button=select('#submit');
+	button.mousePressed(fun2);
+}
+
+
+function fun2()
+{
+	var url=api+city+apikey+units;
+	loadJSON(url,gotData);
+}
+}
+ 
